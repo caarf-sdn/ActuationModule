@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  h1 #{title} 
+  p Views !
+  
+  <div id="ContentLeft">
+  h2 Dispositivos:
+  form(action="/getdevice", method="get")
+  textarea(name="teste", cols="60", rows="25")
+  button(type="submit" title="Get Device")  
+  </div>
+
+  <div id="ContentCenter">
+  h2 DataPath:
+  form(action="/getdevice", method="get")
+  textarea(name="teste", cols="60", rows="25")
+  button(type="submit" title="Get DataPath")  
+  </div>
+
+  <div id="ContentRight">
+  h2 Flow Tables:
+  form(action="/getdevice", method="get")
+  textarea(name="teste", cols="60", rows="25")
+  button(type="submit" title="Get Flow Table" )
+
+
+block content1
+  p Querys
+  <div id="ContentLeft">
+  h2 Query QoD:
+  form(action="/getdevice", method="get")
+  textarea(name="teste", cols="60", rows="25")
+  button(type="submit" title="Get Device")  
+  </div>
+
+  <div id="ContentCenter">
+  h2 Query QoE:
+  form(action="/getdevice", method="get")
+  textarea(name="teste", cols="60", rows="25")
+  button(type="submit" title="Get DataPath")  
+  </div>
+
+  <div id="ContentRight">
+  h2 QoS
+  form(action="/getdevice", method="get")
+  textarea(name="teste", cols="60", rows="25")
+  button(type="submit" title="Get Flow Table" )
+

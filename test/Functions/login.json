@@ -1,0 +1,9 @@
+{ "login": 
+    {   
+        "user":"sdn",
+        "password":"skyline",
+        "domain":"sdn",
+        "x-auth-token": null,
+        "token" : {}
+    }
+}

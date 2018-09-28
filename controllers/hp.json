@@ -1,0 +1,27 @@
+{ 
+    "configure" : {
+    "controlador" : "Controlador HP versao 2.0",
+    "protocol" : "https" ,
+    "ip" : "10.192.168.121",
+    "porta" : "8443"
+    },
+
+    "routes" : {
+
+        "auth" : {
+            "path" : "/sdn/v2.0/auth",
+            "post.auth" : { "login": {"user":"sdn","password":"skyline","domain":"sdn"} },
+            "get.auth" : { "X-Auth-Token" : "token" }
+
+        },
+        "auth/delete" : {
+            "path" : "/sdn/v2.0/auth/delete",
+            "get" : {"AuthConstants.TOKEN" : "token"}
+        },
+       
+        "pathForward" : "/net/paths/forward"
+
+    }
+
+}
+
